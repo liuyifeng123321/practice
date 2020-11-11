@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 50px;
+            background-color: hotpink;
+            text-align: center;
+            line-height: 50px;
+            /* 使用关键帧动画 */
+            animation: l2r 1s;
+        }
+        /* 关键帧动画 */
+        @keyframes l2r {
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(300px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">ff</div>
+</body>
+</html>

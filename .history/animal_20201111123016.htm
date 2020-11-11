@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 50px;
+            background-color: hotpink;
+            text-align: center;
+            line-height: 50px;
+            /* 使用关键帧动画 liner匀速运动 */
+            /* animation: l2r 1s linear; */
+            animation: again 1s linear;
+        }
+        /* 关键帧动画 */
+        @keyframes l2r {
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(300px);
+            }
+        }
+
+        @keyframes again {
+            0%{
+                transform: translateX(0px);
+            }
+            50%{
+                transform: translateX(300px);
+            }
+            100%{
+                transform: translateX(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">ff</div>
+</body>
+</html>
